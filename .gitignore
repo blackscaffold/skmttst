@@ -22,3 +22,7 @@
 
 # Ignore uploaded test images.
 /public/uploads
+
+# Ignore intellij files
+/.idea
+/sample.iml
