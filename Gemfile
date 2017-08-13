@@ -21,6 +21,7 @@ gem 'jbuilder',     '2.4.1'
 group :development, :test do
   gem 'sqlite3', '1.3.11'
   gem 'byebug',  '9.0.0', platform: :mri
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -43,3 +44,5 @@ end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'httparty'

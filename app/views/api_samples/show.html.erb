@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uri:</strong>
+  <%= @api_sample.uri %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @api_sample.body %>
+</p>
+
+<%= link_to 'Edit', edit_api_sample_path(@api_sample) %> |
+<%= link_to 'Back', api_samples_path %>

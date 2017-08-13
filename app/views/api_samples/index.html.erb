@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Api Samples</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uri</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @api_samples.each do |api_sample| %>
+      <tr>
+        <td><%= api_sample.uri %></td>
+        <td><%= api_sample.body %></td>
+        <td><%= link_to 'Show', api_sample %></td>
+        <td><%= link_to 'Edit', edit_api_sample_path(api_sample) %></td>
+        <td><%= link_to 'Destroy', api_sample, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Api Sample', new_api_sample_path %>

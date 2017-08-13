@@ -1,0 +1,22 @@
+<%= form_for(api_sample) do |f| %>
+  <% if api_sample.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(api_sample.errors.count, "error") %> prohibited this api_sample from being saved:</h2>
+
+      <ul>
+      <% api_sample.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uri %>
+    <%= f.text_field :uri %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
